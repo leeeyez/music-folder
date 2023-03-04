@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MUSIC FOLDER</title>
+    <meta charset="utf-8">
+    <style type="text/css">
+    .logo { width: 50%; display: block; margin: auto; }
+    #st {font-family: 'GmarketSansMedium'; display: flex;}
+    img { width: 70%;}
+    img:hover {transform: translateY(-10px); transition: all 500ms ease-in-out;}
+    table { display: block; margin: auto;}
+    @font-face {
+      font-family: 'GmarketSansMedium';
+      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+    }
+    strong {font-family: 'GmarketSansMedium'; text-align: center;}
+    small {font-family: 'GmarketSansMedium'; text-align: center;}
+    footer {display: block; margin: auto; text-align: center; font-family: 'GmarketSansMedium'; color: gray;}
+    </style>
+  </head>
+  <body>
+    <script>
+        function youtube(id) {
+            switch(id) {
+                case 'heize':
+                    document.getElementById('play').innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/cVR9Memyr9Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+                    break;
+                case 'love':
+                    document.getElementById('play').innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/nIVIV-wGF5Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+                    break;
+                case 'forest':
+                    document.getElementById('play').innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/5NzD2Rj7-Eo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+                    break;
+                case 'melo':
+                    document.getElementById('play').innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/dPHwyvprk5I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+                    break;
+                case 'loveisflower':
+                    document.getElementById('play').innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/06BEpkgkTn0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+                    break;
+            }
+        }
+        function info(id) {
+            
+        }
+    </script>
+    <header><a href="main.html"><img class="logo" src="image/black_logo.png"></a></header>
+    <article><h2 id="st">Sound Track</h2><hr>
+    <table>
+        <tr>
+            <td align="center" width="20%">
+                <img src="image/heize.png" onClick="youtube('heize')">
+            </td>
+            <td align="center" width="20%">
+                <img src="image/love.png" onClick="youtube('love')">
+            </td>
+            <td align="center" width="20%">
+                <img src="image/forest.png" onClick="youtube('forest')">
+            </td>
+            <td align="center" width="20%">
+                <img src="image/melo.png" onClick="youtube('melo')">
+            </td>
+            <td align="center" width="20%">
+                <img src="image/loveisflower.png" onClick="youtube('loveisflower')">
+            </td>
+        </tr>
+        <tr>
+            <td align="center">
+                <strong>Missed Call</strong>
+                <br><small>헤이즈(Heize)</small>
+            </td>
+            <td align="center">
+                <strong>Love (Feat.Fisher)</strong>
+                <br><small>Cosmic Boy</small>
+            </td>
+            <td align="center">
+                <strong>걷는 마음(Inst.)</strong>
+                <br><small>융진</small>
+            </td>
+            <td align="center">
+                <strong>위로(Inst.)</strong>
+                <br><small>권진아</small>
+            </td>
+            <td align="center">
+                <strong>Love is a Flower</strong>
+                <br><small>Colde</small>
+            </td>
+        </tr>
+    </table>
+    <p id="st">유튜브로 음악 듣기 &nbsp;&nbsp;<small style="color: rgb(172, 169, 169);"> 원하는 음악의 앨범 이미지를 클릭해보세요!</small></p>
+    <table>
+        <tr>
+            <td><div id="play"></div></td>
+            <td><div id="info"></div></td>
+        </tr>
+    </table></article>
+    <footer>IT공학전공 이예지</footer>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MUSIC FOLDER</title>
+    <meta charset="utf-8">
+    <style type="text/css">
+      body { background-color: black; }
+      img {display: block; margin: auto;}
+      .logo { margin-top: 100px; width: 100%; }
+      .folder { width: 150px; align-items: center; text-align: center;}
+      .folder:hover {transform: translateY(-10px); transition: all 500ms ease-in-out;}
+      .exp {display: block; margin: auto; color:aliceblue; text-align: center;}
+    </style>
+  </head>
+  <body>
+    <script>
+      function startBtn() {
+        var username =  prompt("이름을 입력해주세요.");
+        alert(username+"님 MUSIC FOLDER에 오신 것을 환영합니다! ");
+      }
+    </script>
+    <img class="logo" src="image/white_logo.png">
+    <a href="main.html">
+    <img class="folder" src="image/folder.png" onclick="startBtn()" alt="Open Folder!">
+    <div class="exp">Open Folder!</div>
+    </a>
+  </body>
+</html>
