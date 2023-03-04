@@ -4,7 +4,7 @@
 <br><br>
 
 ### ➡️ Site <hr/>
-<a>http://mm.sookmyung.ac.kr/~it2116213/main.html</a>
+<a>http://mm.sookmyung.ac.kr/~it2116213</a>
 
 <br><br>
 ### ☁️ 소개 <hr/>
